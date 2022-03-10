@@ -1,0 +1,220 @@
+:root {
+
+    /*---------------COLLORS -------------------*/
+    --first-color: rgb(172, 12, 12);
+    --first-color_alt: rgb(172, 12, 12);
+    --first-color_alt_light: rgb(172, 12, 12);
+    --light-color:  #FF2800;
+    --text-color: #171f07;
+    --body-color: #ffffff;   
+
+    /*---------------FONT  AND TYPOGRAPHY-------------------*/
+    --body-font: "Lato", sans-serif;
+    --font-logo: 'Italiana', serif;
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+
+    /*---------------FONT WEIGHT-------------------*/
+    --font-light: 300;
+    --font-medium: 400;
+    --font-bold: 700;
+
+    /*---------------MARGINS-------------------*/
+    --mb-1: 0.5rem;
+    --mb-2: 2rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /*---------------Z INDEXS-------------------*/
+    --Z-fixed: 100;
+    --z-tooltip: 10;
+}
+
+/*---------------BASE-------------------*/
+
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    background-color: #f9f9f9;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*--------------- CLASS CSS-------------------*/
+.section {
+    padding: 4rem 0 2rem;
+}
+
+.section-title,
+.section-subtitle {
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--h1-font-size);
+    letter-spacing: 4px;
+    color: var(--first-color);
+    margin-top: var(--mb-6);
+}
+
+.section-subtitle {
+    display: block;
+    color: var(--text-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-light);
+    letter-spacing: 4px;
+    margin-bottom: var(--mb-1);
+}
+
+.section-text {
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    letter-spacing: 1.2px;
+    line-height: 24px;
+    margin-bottom: var(--mb-2);
+}
+
+/*---------------LAYOUT-------------------*/
+
+.bd-container {
+    max-width: 1024px;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+}
+
+.bd-grid {
+    display: grid;
+    gap: 1, 5rem;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--Z-fixed);
+    background-color: var(--light-color);
+}
+
+.bg-container {
+    background-color: var(--container-color);
+}
+
+/*---------- CARDAPIO------------*/
+.cardapio__container {
+    padding: 1rem 4rem;
+}
+
+.card {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    margin-top: var(--mb-4);
+    margin-bottom: var(--mb-4);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    border-radius: 8px 8px 0 0;
+}
+
+.card__data {
+    height: 6rem;
+}
+
+.card__data h3 {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-left: var(--mb-2);
+}
+
+.card__data .card__descripition {
+    margin-left: var(--mb-2);
+}
+
+.card__data small {
+    font-weight: var(--font-light);
+    font-size: 'Nunito', sans-serif;
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+}
+
+.card__preci {
+    margin-top: var(--mb-3);
+}
+
+.card__preci span {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.card__cart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    background-color: var(--first-color);
+    border-radius: 6px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card__cart:hover {
+    background-color: var(--first-color_alt);
+}
+
+.card img {
+    max-width: 200px;
+    max-height:250px;
+}
+.card {
+    clear: both;
+    margin-top: 20px;
+}
+img {
+    vertical-align: top
+}

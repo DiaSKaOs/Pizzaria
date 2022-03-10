@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="Pizza_Steve.png">
+    <title>Formulário Pizzaria</title>
+</head>
+<body> 
+    <img src="Pizza_Steve.png" width="100" height="100">
+    <div class="box">
+        <form action="thx.html" method="post">
+            <fieldset>
+                <legend><b>Informe os seus dados</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="nome" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="nome" class="labelInput">Telefone</label>
+                </div>
+                <br>
+                <div class="selectpizza">
+                    <br>
+                    <select class="selection" name="pizzaslc" id="pizzaslc">
+                        <option value="predefinicao" class="opcaopizz" selected disabled>Escolha o sabor da pizza</option>
+                        <option value="predefinicao" class="opcaopizz" disabled></option>
+                        <option value="predefinicao" class="opcaopizz" disabled> -- Pizzas Salgadas -- </option>
+                        <option value="Pizza 1" class="opcaopizz"> Mussarela &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$45,50 --
+                        </option>
+                        <option value="Pizza 2" class="opcaopizz"> Rucula com queijo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$45,50 --
+                        </option>
+                        <option value="Pizza 3" class="opcaopizz"> 4 Queijos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$47,50 --
+                        </option>
+                        <option value="Pizza 4" class="opcaopizz"> Frango com catupiry &nbsp;&nbsp;&nbsp;&nbsp;-- R$47,50 --
+                        </option>
+                        <option value="Pizza 5" class="opcaopizz"> Calabresa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$45,50 --
+                        </option>
+                        <option value="Pizza 6" class="opcaopizz"> Pepperoni &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$46,50 --
+                        </option>
+                        <option value="Pizza 7" class="opcaopizz"> Bacon com queijo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$44,50 --
+                        </option>
+                        <option value="predefinicao" class="opcaopizz" disabled> -- Pizzas Doces --</option>
+                        <option value="1 doce" class="opcaopizz"> Brigadeiro &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$45,50 --
+                        </option>
+                        <option value="2 doce" class="opcaopizz">Banana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$45,50 --
+                        </option>
+                        <option value="4 doce" class="opcaopizz"> Ovomaltine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$45,50 --
+                        </option>
+                        <option value="2 doce" class="opcaopizz"> Chocolate MM'S &nbsp;&nbsp;-- R$45,50 --
+                        </option>
+                    </select>
+                </div>
+               
+                <div class="selectbebida">
+                    <br>
+                    <select class="selection" name="bebida" id="bebida">
+                        <option value="predefinicao" class="opcaodrink" selected disabled>Escolha a Bebida</option>
+                        <option value="predefinicao" class="opcaodrink" disabled></option>
+                        <option value="predefinicao" class="opcaodrink" disabled> -- Refrigerantes -- </option>
+                        <option value="Coca-Cola" class="opcaodrink"> Coca-Cola 2Lts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$7,00 --
+                        </option>
+                        <option value="Guaraná" class="opcaodrink"> Guaraná Antártica 2Lts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$7,00 --
+                        </option>
+                        <option value="fanta-laranja" class="opcaodrink"> Fanta-Laranja 2Lts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$7,50 --
+                        </option>
+                        <option value="fanta-uva" class="opcaodrink"> Fanta-Uva 2Lts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$7,50 --
+                        </option>
+                        <option value="sprite" class="opcaodrink"> Sprite 2Lts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$7,50 --
+                        </option>
+                        <option value="Coca-Cola Zero" class="opcaodrink"> Coca-Cola Zero 600ml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$6,50 --
+                        </option>
+                        <option value="Coca-Cola (lata)" class="opcaodrink"> Coca-Cola (lata) 350ml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$4,50 --
+                        </option>
+                        <option value="Coca-Cola Zero (lata)" class="opcaodrink"> Coca-Cola Zero (lata) 350ml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$4,50 --
+                        </option>
+                        <option value="Guaraná (lata)" class="opcaodrink"> Guaraná Antártica (lata) 350ml &nbsp;&nbsp;-- R$4,50 --
+                        </option>
+                        <option value="Sprite (lata)" class="opcaodrink"> Sprite (lata) 350ml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$4,50 --
+                        </option>
+                        <option value="predefinicao" class="opcaodrink" disabled> -- Sucos --</option>
+                        <option value="sucouva" class="opcaodrink">Suco Del Valle Néctar Uva (lata) 290ml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$3,50 --
+                        </option>
+                        <option value="sucolaranja" class="opcaodrink">Suco Del Valle Néctar Laranja (lata) 290ml &nbsp;&nbsp;&nbsp;&nbsp;-- R$3,50 --
+                        </option>
+                        <option value="sucopessego" class="opcaodrink">Suco Del Valle Néctar Pêssego (lata) 290ml &nbsp;&nbsp;-- R$3,50 --
+                        </option>
+                        <option value="predefinicao" class="opcaodrink" disabled> -- Águas --</option>
+                        <option value="agua" class="opcaodrink">Água 500ml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$2,00 --
+                        </option>
+                        <option value="sucopessego" class="opcaodrink">Água com Gás 500ml &nbsp;&nbsp;-- R$2,50 --
+                        </option>
+                    </select>
+                </div>
+                <br>
+                <p>Forma de pagamento:</p>
+                <input type="radio" id="credito" name="pag" value="credito" required>
+                <label for="credito">Crédito</label>
+                <br>
+                <input type="radio" id="debito" name="pag" value="debito" required>
+                <label for="debito">Débito</label>
+                <br>
+                <input type="radio" id="pix" name="pag" value="pix" required>
+                <label for="pix">PIX</label>
+                <br>
+                <input type="radio" id="dinheiro" name="pag" value="dinheiro" required>
+                <label for="dinheiro">Dinheiro</label>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="nome" class="labelInput">Endereço</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+        <br>
+        <div class="footer">
+            <span>Nos siga nas redes sociais</span>
+            <div class="social-fields">
+                <div class="social-field facebook">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        Sign in with Facebook
+                    </a>
+                    
+                </div>
+                <div class="social-fields">
+                    <div class="social-field instagram">
+                        <a href="https://www.instagram.com/guiga.ms/">
+                            <i class="fab fa-instagram"></i>
+                            Sign in with Instagram
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</form>
+    
+</body>
+</html>
